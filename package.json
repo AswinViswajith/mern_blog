@@ -1,0 +1,30 @@
+{
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "concurrently": "^9.1.0",
+    "nodemon": "^3.1.7"
+  },
+  "name": "mern-blog",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "debug": "^4.3.7",
+    "express": "^4.21.1",
+    "globals": "^11.12.0",
+    "js-tokens": "^4.0.0",
+    "jsesc": "^3.0.2",
+    "mongodb": "^6.10.0",
+    "ms": "^2.1.3",
+    "picocolors": "^1.1.1",
+    "semver": "^6.3.1"
+  },
+  "scripts": {
+    "server": "nodemon server",
+    "client":"npm start --prefix client",
+    "dev":"concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Aswin Viswajith N R",
+  "license": "ISC",
+  "description": "MERN app to learn fullstack development"
+}
